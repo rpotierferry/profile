@@ -1,0 +1,140 @@
+body {
+  background-color: chartreuse;
+  color:rgb(174, 0, 255);
+  line-height: normal;
+}
+
+h1, h2, h3 {
+  font-family: 'Workbench', sans-serif;
+}
+
+p {
+  font-family: 'Poor Story', system-ui;
+  font-size: large;
+  color: deeppink;
+}
+
+a {
+  text-decoration: rgb(128, 0, 0) wavy underline;
+}
+
+a:hover {
+  font-family: 'Rubik Glitch Pop', system-ui;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.container {
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+.card {
+  border: 2px dotted pink;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px  rgb(11, 59, 15);
+  margin: 10px;
+  background-color: aqua;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.background-pink {
+  background-color: coral;
+}
+
+.background-image-lorraine {
+  background-image: url(images/Flag_of_Lorraine.svg.png);
+  animation: slide 5s alternate infinite;
+}
+
+#pp:hover {
+  width: 80%;
+  height: 80%;
+  transform: rotate(360deg);
+  transition: width 2s, height 2s, transform 2s;
+}
+
+h3:hover {
+  transform: rotate(-360deg);
+  transition: width 1s, height 1s, transform 1s;
+}
+
+h2:hover {
+  transform: rotate(-360deg);
+  transition: width 1.5s, height 1.5s, transform 1.5s;
+}
+
+#blinking {
+  animation: mymove 0.5s infinite;
+  border: 2px dotted pink;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px  rgb(11, 59, 15);
+  margin: 10px;
+  text-align: center;
+}
+
+@keyframes mymove {
+  from {background-color: chocolate;}
+  to {background-color: darkcyan;}
+}
+
+.btn {
+  background-color: aquamarine;
+  border: 1px solid blue;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+.rotate {
+  animation: rotation 0.5s infinite linear
+}
+
+.rotate-invert {
+  animation: rotation-inverse 5s infinite linear
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation-inverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(400px, 0, 0);
+  }
+  100%{
+    transform: translate3d(-400px, 0, 0);
+  }
+}
+
+.background-orange {
+  background-color: rgb(180, 164, 44);
+}
+
+.text-black {
+  color: rgb(170, 170, 170);
+}
